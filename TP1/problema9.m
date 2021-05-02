@@ -14,10 +14,10 @@ f = [10e3:1e6:2e9+1e6];
 [real_i_A_CA, imag_i_A_CA] = impedancia_de_entrada(f, Inf, Z0, 0, v, l);
 
 % alínea i, linha com perdas, curto-circuito
-[real_i_B_CC, imag_i_B_CC] = impedancia_de_entrada(f, 0, Z0, 1e-5*f, v, l);
+[real_i_B_CC, imag_i_B_CC] = impedancia_de_entrada(f, 0, Z0, 1e-5*sqrt(f), v, l);
 
 % alínea i, linha com perdas, circuito aberto
-[real_i_B_CA, imag_i_B_CA] = impedancia_de_entrada(f, Inf, Z0, 0, v, l);
+[real_i_B_CA, imag_i_B_CA] = impedancia_de_entrada(f, Inf, Z0, 1e-5*sqrt(f), v, l);
 
 
 
@@ -28,10 +28,10 @@ f = [10e3:1e6:2e9+1e6];
 [modulo_ii_A_CA, fase_ii_A_CA] = coeficiente_de_reflexao(f, Inf, Z0, 0, v, l);
 
 % alínea ii, linha com perdas, curto-circuito
-[modulo_ii_B_CC, fase_ii_B_CC] = coeficiente_de_reflexao(f, 0, Z0, 1e-5*f, v, l);
+[modulo_ii_B_CC, fase_ii_B_CC] = coeficiente_de_reflexao(f, 0, Z0, 1e-5*sqrt(f), v, l);
 
 % alínea ii, linha com perdas, circuito aberto
-[modulo_ii_B_CA, fase_ii_B_CA] = coeficiente_de_reflexao(f, Inf, Z0, 0, v, l);
+[modulo_ii_B_CA, fase_ii_B_CA] = coeficiente_de_reflexao(f, Inf, Z0, 1e-5*sqrt(f), v, l);
  
 
     
