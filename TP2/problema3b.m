@@ -19,4 +19,4 @@ fplot(beta_g_11, 'LineWidth', 2), hold off;
 xlim([fc10*0.75 fc11/0.25]);
 xlabel('Frequência [Hz]'), ylabel('\beta_g'), ...
     title('Evolução da constante de propagação com a frequência');
-legend('\beta_g_{10}', '\beta_g_{20}', '\beta_g_{11}');
+legend('\beta_g_{10}', '\beta_g_{20}', '\beta_g_{11}'), grid on;

@@ -102,7 +102,7 @@ hold off;
 
 xlim([5e9 20e9]), ylim([0 0.1]);
     xlabel('Frequência [Hz]'), ylabel('\alpha [Np/m]'), ...
-        title('Atenuação no guia quadrado em função da frequência');
+        title('Atenuação no guia quadrado em função da frequência'), grid on, ...
 legend('TE_{10}', 'TE_{01}', 'TE_{02}', 'TE_{20}', 'TM_{11}', 'TE_{11}');
 
 % a = 2b
@@ -115,6 +115,6 @@ hold off;
 
 
 xlim([5e9 20e9]), ylim([0 0.1]);
-    xlabel('Frequência [Hz]'), ylabel('\alpha [Np/m]'), ...
+    xlabel('Frequência [Hz]'), ylabel('\alpha [Np/m]'), grid on, ...
         title('Atenuação no guia retangular (a = 2b) em função da frequência');
 legend('TE_{10}', 'TE_{20}', 'TE_{01}');
