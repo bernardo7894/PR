@@ -1,7 +1,7 @@
 P_emissao = 10;
 
 % lambda com dielétrico epsilon_r = 2.25
-lambda = 0.02;
+lambda = 0.03;
 
 d_antena = 20;
 
